@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #aeb1b9;
+  font-size: 14px;
+  line-height: 22px;
+  color: #f3f3f349;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #b3b4b4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 6px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color:#0f0f0f;
+}
+
+.resume .resume_left .regular {
+  color: #030303;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #0c0c0c;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #020202;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #080808;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #0c0c0c;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #eeeef1;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgb(15, 15, 15);
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: rgb(10, 10, 10);
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #9d9d9e;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0f0f0f;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #080808;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0d0d0e;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0a0a0a;
+  border-radius: 50%;
+  position: relative;
+  color: #050505;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0e0e0e;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.container{
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #b3b4b4;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+
+.item{
+  background-color: #b5b6b8;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+  
+  transition: all 300ms;
+  
+  position: relative;
+}
+
+
+.item::after {
+  content: "";
+  background-color: rgba(179, 229, 252, .1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.item:hover:after{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-text{
+  padding: 1em;
+}
+
+
+.item-img{
+  max-width: 100%;
+  display: block;
+}
+
+
+@media screen and (min-width: 590px) {
+  
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
+
+
+@media screen and (min-width: 960px) {
+  
+  .container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:right;
+  margin: 10px;
+}
+
+.nav li a {
+  background-color:rgb(253, 251, 251);
+  color: #000;
+  text-decoration:none;
+  padding: 800px;;
+display: contents;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+#header {
+  margin: auto;
+  width:500px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.bold{
+  color: rgb(247, 243, 243);
+}
+main{
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 80px;
+  position: relative;
+  background-color: #aeb1b9;
+  background-position: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.capa-black{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #aeb1b9;
+  top: 0;
+  left: 0;
+}
+
+.h1{
+  position: relative;
+  color: #03030349;
+}
+
+
+
+.container-testimonials{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.testimonial{
+  width: 340px;
+  margin: 20px;
+  background: #f3f3f349;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 5px black;
+  
+}
+
+.photo-perfil1,
+.photo-perfil2,
+.photo-perfil3{
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  box-shadow: 0px 0px 30px -6px black;
+}
+
+.photo-perfil1{
+  background-image: url(img/mic.jpg);
+  background-position: center -10px;
+}
+
+.photo-perfil2{
+  background-image: url(img/aly.jpg);
+  background-size: 160px;
+  background-position: -20px 0px;
+}
+
+.photo-perfil3{
+  background-image: url(img/jim.jpg);
+  background-size: 260px;
+  background-position: -68px -10px;
+}
+
+
+.testimonial h2{
+  margin-top: -40px;
+}
+
+.testimonial h4{
+  margin-top: 10px;
+  color: #030303;
+  font-weight: 400;
+}
+
+.testimonial p{
+  margin-top: 10px;
+  font-weight: 100;
+  color: #050505;
+}
+
